@@ -1,0 +1,29 @@
+
+def euler31(n=200):
+    result = 0
+    a = n
+    while a >= 0:
+        a -= n
+        b = a
+        while b >= 0:
+            b -= 100
+            c = b
+            while c >= 0:
+                c -= 50
+                d = c
+                while d >= 0:
+                    d -= 20
+                    e = d
+                    while e >= 0:
+                        e -= 10
+                        f = e
+                        while f >= 0:
+                            f -= 5
+                            g = f
+                            while g >= 0:
+                                g -= 2
+                                h = f
+                                while h >= 0:
+                                    h -= 1
+                                    result += 1
+        print(result)
